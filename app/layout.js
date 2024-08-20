@@ -16,7 +16,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        elements: {
+          footer: "hidden",
+        },
+      }}>
       <html lang="en">
         <body>
           <nav className="flex justify-between items-center p-4 bg-gray-100">
